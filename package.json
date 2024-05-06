@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "composerize": "^1.6.10"
+  },
+  "scripts": {
+    "server": "node ./index.js 8888"
   }
 }

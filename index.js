@@ -3,6 +3,10 @@ var url = require('url');
 var convertDockerRunToCompose = require('composerize');
 
 var port = process.argv[2]
+if (typeof(port) === 'undefined'){
+    console.log('没有设置端口，默认端口为8888')
+    port = 8888
+}
 
 http.createServer(function(request, response){
 
