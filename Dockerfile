@@ -6,4 +6,4 @@ WORKDIR /home/node
 COPY . /home/node
 RUN npm install
 
-ENTRYPOINT ["npm", "run"]
+ENTRYPOINT ["npm", "start"]
