@@ -4,8 +4,6 @@ RUN mkdir -p /home/node
 WORKDIR /home/node
 
 COPY . /home/node
-RUN npm config set registry https://registry.npm.taobao.org
-RUN npm install -g yarn
-RUN yarn install
+RUN npm install
 
-ENTRYPOINT ["yarn", "run server"]
+ENTRYPOINT ["npm", "run"]
