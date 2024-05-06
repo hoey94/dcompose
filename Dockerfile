@@ -1,4 +1,7 @@
-FROM node:16.14.2
+FROM alpine:3.13.4
+RUN apk add nodejs
+RUN apk add npm
+RUN npm i pm2 -g
 
 RUN mkdir -p /home/node
 WORKDIR /home/node
