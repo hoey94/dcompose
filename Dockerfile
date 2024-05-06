@@ -4,6 +4,7 @@ RUN mkdir -p /home/node
 WORKDIR /home/node
 
 COPY . /home/node
-RUN npm install
+RUN npm install -g cnpm
+RUN cnpm install
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["cnpm", "start"]
