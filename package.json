@@ -3,6 +3,7 @@
     "composerize": "^1.6.10"
   },
   "scripts": {
+    "start": "npm run server",
     "server": "node ./index.js 8888"
   }
 }
