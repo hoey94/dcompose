@@ -1,7 +1,4 @@
-FROM alpine:3.13.4
-RUN apk add nodejs
-RUN apk add npm
-RUN npm i pm2 -g
+FROM node:18-alpine3.14 as build-stage
 
 RUN mkdir -p /home/node
 WORKDIR /home/node
